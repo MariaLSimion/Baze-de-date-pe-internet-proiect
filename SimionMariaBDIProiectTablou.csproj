@@ -44,6 +44,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -67,13 +68,37 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AuctionsPage.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="GraphsPage.aspx" />
+    <Content Include="OffersPage.aspx" />
     <Content Include="PaintingsPage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AuctionsPage.aspx.cs">
+      <DependentUpon>AuctionsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuctionsPage.aspx.designer.cs">
+      <DependentUpon>AuctionsPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GraphsPage.aspx.cs">
+      <DependentUpon>GraphsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GraphsPage.aspx.designer.cs">
+      <DependentUpon>GraphsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OffersPage.aspx.cs">
+      <DependentUpon>OffersPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OffersPage.aspx.designer.cs">
+      <DependentUpon>OffersPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="PaintingsPage.aspx.cs">
       <DependentUpon>PaintingsPage.aspx</DependentUpon>
